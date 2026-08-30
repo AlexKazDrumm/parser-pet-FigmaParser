@@ -1,0 +1,168 @@
+{
+  "name": "Demo Login Card",
+  "lastModified": "2024-01-01T00:00:00Z",
+  "version": "0",
+  "role": "viewer",
+  "editorType": "figma",
+  "document": {
+    "id": "0:0",
+    "name": "Document",
+    "type": "DOCUMENT",
+    "children": [
+      {
+        "id": "0:1",
+        "name": "Page 1",
+        "type": "CANVAS",
+        "children": [
+          {
+            "id": "10:2",
+            "name": "Login Card",
+            "type": "FRAME",
+            "absoluteBoundingBox": { "x": 100, "y": 80, "width": 320, "height": 360 },
+            "cornerRadius": 16,
+            "clipsContent": true,
+            "layoutMode": "VERTICAL",
+            "itemSpacing": 16,
+            "paddingTop": 24,
+            "paddingRight": 24,
+            "paddingBottom": 24,
+            "paddingLeft": 24,
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN",
+            "fills": [
+              { "type": "SOLID", "visible": true, "opacity": 1, "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }
+            ],
+            "strokes": [],
+            "effects": [
+              {
+                "type": "DROP_SHADOW",
+                "visible": true,
+                "radius": 24,
+                "offset": { "x": 0, "y": 8 },
+                "color": { "r": 0.05, "g": 0.09, "b": 0.16, "a": 0.15 }
+              }
+            ],
+            "children": [
+              {
+                "id": "10:3",
+                "name": "Title",
+                "type": "TEXT",
+                "characters": "Sign in",
+                "absoluteBoundingBox": { "x": 124, "y": 104, "width": 272, "height": 32 },
+                "style": {
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": 700,
+                  "lineHeightPx": 32,
+                  "letterSpacing": 0,
+                  "textAlignHorizontal": "LEFT"
+                },
+                "fills": [
+                  { "type": "SOLID", "visible": true, "color": { "r": 0.09, "g": 0.09, "b": 0.11, "a": 1 } }
+                ]
+              },
+              {
+                "id": "10:4",
+                "name": "Email field",
+                "type": "FRAME",
+                "absoluteBoundingBox": { "x": 124, "y": 152, "width": 272, "height": 44 },
+                "cornerRadius": 8,
+                "strokeWeight": 1,
+                "strokes": [
+                  { "type": "SOLID", "visible": true, "color": { "r": 0.82, "g": 0.82, "b": 0.84, "a": 1 } }
+                ],
+                "fills": [
+                  { "type": "SOLID", "visible": true, "color": { "r": 0.957, "g": 0.957, "b": 0.961, "a": 1 } }
+                ],
+                "children": [
+                  {
+                    "id": "10:5",
+                    "name": "Label",
+                    "type": "TEXT",
+                    "characters": "Email",
+                    "absoluteBoundingBox": { "x": 136, "y": 164, "width": 120, "height": 20 },
+                    "style": {
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": 400,
+                      "lineHeightPx": 20,
+                      "textAlignHorizontal": "LEFT"
+                    },
+                    "fills": [
+                      { "type": "SOLID", "visible": true, "color": { "r": 0.42, "g": 0.45, "b": 0.5, "a": 1 } }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "10:6",
+                "name": "Password field",
+                "type": "FRAME",
+                "absoluteBoundingBox": { "x": 124, "y": 212, "width": 272, "height": 44 },
+                "cornerRadius": 8,
+                "strokeWeight": 1,
+                "strokes": [
+                  { "type": "SOLID", "visible": true, "color": { "r": 0.82, "g": 0.82, "b": 0.84, "a": 1 } }
+                ],
+                "fills": [
+                  { "type": "SOLID", "visible": true, "color": { "r": 0.957, "g": 0.957, "b": 0.961, "a": 1 } }
+                ],
+                "children": [
+                  {
+                    "id": "10:7",
+                    "name": "Label",
+                    "type": "TEXT",
+                    "characters": "Password",
+                    "absoluteBoundingBox": { "x": 136, "y": 224, "width": 140, "height": 20 },
+                    "style": {
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": 400,
+                      "lineHeightPx": 20,
+                      "textAlignHorizontal": "LEFT"
+                    },
+                    "fills": [
+                      { "type": "SOLID", "visible": true, "color": { "r": 0.42, "g": 0.45, "b": 0.5, "a": 1 } }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "10:8",
+                "name": "Primary button",
+                "type": "INSTANCE",
+                "absoluteBoundingBox": { "x": 124, "y": 272, "width": 272, "height": 44 },
+                "cornerRadius": 8,
+                "fills": [
+                  { "type": "SOLID", "visible": true, "color": { "r": 0.145, "g": 0.388, "b": 0.922, "a": 1 } }
+                ],
+                "children": [
+                  {
+                    "id": "10:9",
+                    "name": "Caption",
+                    "type": "TEXT",
+                    "characters": "Continue",
+                    "absoluteBoundingBox": { "x": 124, "y": 284, "width": 272, "height": 20 },
+                    "style": {
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": 600,
+                      "lineHeightPx": 20,
+                      "textAlignHorizontal": "CENTER"
+                    },
+                    "fills": [
+                      { "type": "SOLID", "visible": true, "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "components": {},
+  "componentSets": {},
+  "styles": {}
+}

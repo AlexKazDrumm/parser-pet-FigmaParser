@@ -1,0 +1,3 @@
+# Optional: enables /api/figma/export/ai and /api/image/export.
+-r requirements.txt
+openai==3.6.0

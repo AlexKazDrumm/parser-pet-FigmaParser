@@ -1,0 +1,289 @@
+[
+  {
+    "id": "10:2",
+    "name": "Login Card",
+    "type": "FRAME",
+    "absoluteBoundingBox": {
+      "x": 100,
+      "y": 80,
+      "width": 320,
+      "height": 360
+    },
+    "fills": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    ],
+    "strokes": [],
+    "cornerRadius": 16,
+    "effects": [
+      {
+        "type": "DROP_SHADOW",
+        "visible": true,
+        "radius": 24,
+        "offset": {
+          "x": 0,
+          "y": 8
+        },
+        "color": {
+          "r": 0.05,
+          "g": 0.09,
+          "b": 0.16,
+          "a": 0.15
+        }
+      }
+    ],
+    "clipsContent": true,
+    "layoutMode": "VERTICAL",
+    "itemSpacing": 16,
+    "paddingTop": 24,
+    "paddingRight": 24,
+    "paddingBottom": 24,
+    "paddingLeft": 24,
+    "primaryAxisAlignItems": "MIN",
+    "counterAxisAlignItems": "MIN",
+    "children": [
+      {
+        "id": "10:3",
+        "name": "Title",
+        "type": "TEXT",
+        "absoluteBoundingBox": {
+          "x": 124,
+          "y": 104,
+          "width": 272,
+          "height": 32
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "color": {
+              "r": 0.09,
+              "g": 0.09,
+              "b": 0.11,
+              "a": 1
+            }
+          }
+        ],
+        "style": {
+          "fontFamily": "Inter",
+          "fontSize": 24,
+          "fontWeight": 700,
+          "lineHeightPx": 32,
+          "letterSpacing": 0,
+          "textAlignHorizontal": "LEFT"
+        },
+        "characters": "Sign in",
+        "children": []
+      },
+      {
+        "id": "10:4",
+        "name": "Email field",
+        "type": "FRAME",
+        "absoluteBoundingBox": {
+          "x": 124,
+          "y": 152,
+          "width": 272,
+          "height": 44
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "color": {
+              "r": 0.957,
+              "g": 0.957,
+              "b": 0.961,
+              "a": 1
+            }
+          }
+        ],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "color": {
+              "r": 0.82,
+              "g": 0.82,
+              "b": 0.84,
+              "a": 1
+            }
+          }
+        ],
+        "strokeWeight": 1,
+        "cornerRadius": 8,
+        "children": [
+          {
+            "id": "10:5",
+            "name": "Label",
+            "type": "TEXT",
+            "absoluteBoundingBox": {
+              "x": 136,
+              "y": 164,
+              "width": 120,
+              "height": 20
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "color": {
+                  "r": 0.42,
+                  "g": 0.45,
+                  "b": 0.5,
+                  "a": 1
+                }
+              }
+            ],
+            "style": {
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": 400,
+              "lineHeightPx": 20,
+              "textAlignHorizontal": "LEFT"
+            },
+            "characters": "Email",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "10:6",
+        "name": "Password field",
+        "type": "FRAME",
+        "absoluteBoundingBox": {
+          "x": 124,
+          "y": 212,
+          "width": 272,
+          "height": 44
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "color": {
+              "r": 0.957,
+              "g": 0.957,
+              "b": 0.961,
+              "a": 1
+            }
+          }
+        ],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "color": {
+              "r": 0.82,
+              "g": 0.82,
+              "b": 0.84,
+              "a": 1
+            }
+          }
+        ],
+        "strokeWeight": 1,
+        "cornerRadius": 8,
+        "children": [
+          {
+            "id": "10:7",
+            "name": "Label",
+            "type": "TEXT",
+            "absoluteBoundingBox": {
+              "x": 136,
+              "y": 224,
+              "width": 140,
+              "height": 20
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "color": {
+                  "r": 0.42,
+                  "g": 0.45,
+                  "b": 0.5,
+                  "a": 1
+                }
+              }
+            ],
+            "style": {
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": 400,
+              "lineHeightPx": 20,
+              "textAlignHorizontal": "LEFT"
+            },
+            "characters": "Password",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "10:8",
+        "name": "Primary button",
+        "type": "INSTANCE",
+        "absoluteBoundingBox": {
+          "x": 124,
+          "y": 272,
+          "width": 272,
+          "height": 44
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "color": {
+              "r": 0.145,
+              "g": 0.388,
+              "b": 0.922,
+              "a": 1
+            }
+          }
+        ],
+        "cornerRadius": 8,
+        "children": [
+          {
+            "id": "10:9",
+            "name": "Caption",
+            "type": "TEXT",
+            "absoluteBoundingBox": {
+              "x": 124,
+              "y": 284,
+              "width": 272,
+              "height": 20
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "color": {
+                  "r": 1,
+                  "g": 1,
+                  "b": 1,
+                  "a": 1
+                }
+              }
+            ],
+            "style": {
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": 600,
+              "lineHeightPx": 20,
+              "textAlignHorizontal": "CENTER"
+            },
+            "characters": "Continue",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

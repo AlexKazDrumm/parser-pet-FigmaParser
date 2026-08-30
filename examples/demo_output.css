@@ -1,0 +1,127 @@
+/* Base container for preview */
+.figma-export-canvas {
+  position: relative;
+  width: 320px;
+  height: 360px;
+  overflow: hidden;
+}
+
+/* Document/Page 1/Login Card (10:2) */
+.Document__Page_1__Login_Card {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 320px;
+  height: 360px;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 8px 24px rgba(13,23,41,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 24px 24px 24px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Document/Page 1/Login Card/Title (10:3) */
+.Document__Page_1__Login_Card__Title {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  width: 272px;
+  height: 32px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 32px;
+  letter-spacing: 0.00px;
+  color: #17171c;
+  white-space: pre-wrap;
+}
+
+/* Document/Page 1/Login Card/Email field (10:4) */
+.Document__Page_1__Login_Card__Email_field {
+  position: absolute;
+  left: 24px;
+  top: 72px;
+  width: 272px;
+  height: 44px;
+  background: #f4f4f5;
+  border: 1px solid #d1d1d6;
+  border-radius: 8px;
+}
+
+/* Document/Page 1/Login Card/Email field/Label (10:5) */
+.Document__Page_1__Login_Card__Email_field__Label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 120px;
+  height: 20px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 20px;
+  color: #6b7380;
+  white-space: pre-wrap;
+}
+
+/* Document/Page 1/Login Card/Password field (10:6) */
+.Document__Page_1__Login_Card__Password_field {
+  position: absolute;
+  left: 24px;
+  top: 132px;
+  width: 272px;
+  height: 44px;
+  background: #f4f4f5;
+  border: 1px solid #d1d1d6;
+  border-radius: 8px;
+}
+
+/* Document/Page 1/Login Card/Password field/Label (10:7) */
+.Document__Page_1__Login_Card__Password_field__Label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 140px;
+  height: 20px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 20px;
+  color: #6b7380;
+  white-space: pre-wrap;
+}
+
+/* Document/Page 1/Login Card/Primary button (10:8) */
+.Document__Page_1__Login_Card__Primary_button {
+  position: absolute;
+  left: 24px;
+  top: 192px;
+  width: 272px;
+  height: 44px;
+  background: #2563eb;
+  border-radius: 8px;
+}
+
+/* Document/Page 1/Login Card/Primary button/Caption (10:9) */
+.Document__Page_1__Login_Card__Primary_button__Caption {
+  position: absolute;
+  left: 0px;
+  top: 12px;
+  width: 272px;
+  height: 20px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 20px;
+  color: #ffffff;
+  white-space: pre-wrap;
+}
+

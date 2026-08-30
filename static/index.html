@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Figma → HTML / CSS / JSON</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="/static/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>Figma → HTML / CSS / JSON</h1>
+
+    <section class="panel">
+      <h2>1. Источник</h2>
+      <div class="row">
+        <label>Figma URL или file key:</label>
+        <input id="fileRef" type="text" placeholder="https://www.figma.com/design/&lt;key&gt;/&lt;name&gt;" />
+      </div>
+      <div class="row">
+        <label>Figma token:</label>
+        <input id="token" type="password" placeholder="figd_..." />
+        <small>Можно оставить пустым, если FIGMA_TOKEN задан на сервере.</small>
+      </div>
+      <button id="loadBtn">Загрузить дерево</button>
+      <div id="loadStatus" class="status"></div>
+    </section>
+
+    <section class="panel">
+      <h2>2. Дерево узлов</h2>
+      <div id="tree" class="tree"></div>
+    </section>
+
+    <section class="panel">
+      <h2>3. Экспорт</h2>
+      <div class="row">
+        <label><input id="normalize" type="checkbox" checked /> Нормализовать в (0,0)</label>
+        <label><input id="labelFullPath" type="checkbox" checked /> Классы по полному пути</label>
+      </div>
+
+      <div class="grid2">
+        <div class="box">
+          <h3>Структурный экспорт</h3>
+          <p class="hint">HTML + CSS + JSON из свойств узлов Figma.</p>
+          <button id="structuredBtn">Structured → HTML + CSS + JSON</button>
+          <div id="structuredStatus" class="status"></div>
+        </div>
+
+        <div class="box">
+          <h3>Пиксель-перфект</h3>
+          <div class="row">
+            <label>Формат:</label>
+            <select id="pixelFormat">
+              <option value="svg">SVG</option>
+              <option value="png">PNG</option>
+            </select>
+            <label>Масштаб:</label>
+            <input id="pixelScale" type="number" min="0.1" max="4" step="0.1" value="1.0" style="width:90px" />
+          </div>
+          <button id="pixelBtn">Pixel-perfect → HTML</button>
+          <div id="pixelStatus" class="status"></div>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="box">
+          <h3>AI-экспорт (опционально)</h3>
+          <div class="row">
+            <label>Модель:</label>
+            <input id="aiModel" type="text" value="gpt-4o" style="min-width:160px" />
+          </div>
+          <p class="hint">Требуется OPENAI_API_KEY на сервере.</p>
+          <button id="aiBtn">AI → HTML + CSS</button>
+          <div id="aiStatus" class="status"></div>
+        </div>
+
+        <div class="box">
+          <h3>Экспорт по изображению (опционально)</h3>
+          <div class="row">
+            <input id="imgFile" type="file" accept="image/png,image/jpeg,image/webp,image/gif" />
+          </div>
+          <button id="imgBtn">Image → HTML + CSS</button>
+          <div id="imgStatus" class="status"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>4. Результат</h2>
+      <div class="split-3">
+        <div>
+          <h3>CSS</h3>
+          <textarea id="cssOut" spellcheck="false"></textarea>
+        </div>
+        <div>
+          <h3>HTML</h3>
+          <textarea id="htmlOut" spellcheck="false"></textarea>
+        </div>
+        <div>
+          <h3>JSON</h3>
+          <textarea id="jsonOut" spellcheck="false"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>5. Предпросмотр</h2>
+      <iframe id="preview" class="preview" sandbox="allow-same-origin"></iframe>
+    </section>
+  </div>
+
+  <script src="/static/main.js" defer></script>
+</body>
+</html>

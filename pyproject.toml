@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "figma-exporter"
+version = "1.0.0"
+description = "FastAPI service that exports selected Figma nodes to HTML, CSS and JSON"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "AlexKazDrumm", email = "alexkazdrumm@gmail.com" }]
+dependencies = [
+    "fastapi==0.141.1",
+    "starlette==1.6.0",
+    "uvicorn[standard]==0.52.4",
+    "pydantic==2.13.5",
+    "pydantic-settings==2.15.0",
+    "httpx==0.28.1",
+    "python-multipart==0.0.32",
+]
+
+[project.optional-dependencies]
+ai = ["openai==3.6.0"]
+image = ["openai==3.6.0", "Pillow==12.3.0", "playwright==1.56.0"]
+dev = ["pytest==9.1.1", "pytest-cov==7.1.0", "ruff==0.16.5", "pip-audit==2.10.1"]
+
+[project.scripts]
+figma-exporter = "figma_exporter.__main__:main"
+
+[tool.setuptools]
+packages = ["figma_exporter", "figma_exporter.exporters"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "W", "C4"]
+ignore = ["B008"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
